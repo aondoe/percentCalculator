@@ -26,7 +26,7 @@ if(empty($isNum) && !empty($ofNum)){
 
           echo "<table>";
           echo "<tr><td></td></tr>";
-          echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".$solution."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".$percent."% of ".$ofNum." </h2>";
+          echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".number_format($solution)."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".$percent."% of ".$ofNum." </h2>";
 }
 
 if(empty($ofNum) && !empty($isNum)){
@@ -35,7 +35,7 @@ if(empty($ofNum) && !empty($isNum)){
 
         echo "<table>";
         echo "<tr><td></td></tr>";
-        echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".$isNum."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".$percent."% of ".$solution."</td></tr>";
+        echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".$isNum."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".$percent."% of ".number_format($solution)."</td></tr>";
     }
 
 if(empty($percent) && !empty($isNum)){
@@ -44,7 +44,7 @@ if(empty($percent) && !empty($isNum)){
 
         echo "<table>";
         echo "<tr><td></td></tr>";
-        echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".$isNum."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".$solution."% of ".$ofNum."</td></tr>";;
+        echo "<tr><td style='color:blue; font-size:25px; font-weight:bold;'> The number: ".$isNum."</td> <td style='font-size:25px;font-weight:bold; color:red;'> <p style='color:black; font-size:25px;'>is ".number_format($solution)."% of ".$ofNum."</td></tr>";;
   }
 
 // {
